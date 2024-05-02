@@ -1,5 +1,6 @@
 <script>
-	import DropDown from '$lib/components/DropDown.svelte';
+	import Accordion from '$lib/components/Accordion/Accordion.svelte';
 </script>
 
-<DropDown />
+<!-- <DropDown /> -->
+<Accordion />

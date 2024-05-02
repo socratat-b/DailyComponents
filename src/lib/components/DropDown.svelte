@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { isOpen } from '$lib/store';
+	import { slide } from 'svelte/transition';
 
 	let toggle = $isOpen;
 </script>
@@ -7,7 +8,7 @@
 <div class="relative">
 	<button
 		on:click={() => (toggle = !toggle)}
-		class="flex text-xs items-center gap-2 border border-black/25 px-4 py-2 rounded-sm"
+		class="flex items-center gap-2 px-4 py-2 text-xs border rounded-sm border-black/25"
 		>Dropdown
 		<span>
 			<svg
@@ -27,18 +28,19 @@
 
 	{#if toggle}
 		<div
-			class=" absolute border border-black/25 w-36 rounded-sm top-10 right-0 flex flex-col items-center gap-2 transition-all duration-700"
+			transition:slide
+			class="absolute right-0 flex flex-col items-center gap-2 transition-all duration-1000 border rounded-sm border-black/25 w-36 top-10"
 		>
-			<a href="/" class=" w-full p-2 group hover:bg-blue-50 transition-all duration-500">
+			<a href="/" class="w-full p-2 transition-all duration-500 group hover:bg-blue-50">
 				<p class="text-xs font-semibold">Day 1</p>
 			</a>
-			<a href="/" class=" w-full p-2 group hover:bg-blue-50 transition-all duration-700">
+			<a href="/" class="w-full p-2 transition-all duration-700 group hover:bg-blue-50">
 				<p class="text-xs font-semibold">Day 2</p>
 			</a>
-			<a href="/" class=" w-full p-2 group hover:bg-blue-50 transition-all duration-700">
+			<a href="/" class="w-full p-2 transition-all duration-700 group hover:bg-blue-50">
 				<p class="text-xs font-semibold">Day 3</p>
 			</a>
-			<a href="/" class=" w-full p-2 group hover:bg-blue-50 transition-all duration-700">
+			<a href="/" class="w-full p-2 transition-all duration-700 group hover:bg-blue-50">
 				<p class="text-xs font-semibold">Day 4</p>
 			</a>
 		</div>
