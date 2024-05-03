@@ -1,17 +1,15 @@
 <script>
 	import { slide } from 'svelte/transition';
+
 	export let itemTitle = '';
 	export let itemContent = '';
-	let isOpen = false;
+	export let isOpen = false;
 </script>
 
 <div class="flex flex-col w-full gap-2">
-	<button
-		on:click={() => (isOpen = !isOpen)}
-		class="flex items-center justify-between p-3 font-semibold hover:underline"
-	>
+	<button on:click class="flex items-center justify-between p-3 font-semibold hover:underline">
 		{itemTitle}
-		<span class="{isOpen ? '' : '-rotate-90'} ">
+		<span class="{isOpen ? 'rotate-0' : '-rotate-90'}   transition-all duration-500">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
