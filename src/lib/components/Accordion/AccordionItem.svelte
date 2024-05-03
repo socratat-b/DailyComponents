@@ -25,7 +25,7 @@
 		</span>
 	</button>
 	{#if isOpen}
-		<div transition:slide class="px-3 pb-4 text-sm">
+		<div transition:slide class=" px-3 pb-4 text-sm">
 			<p>{itemContent}</p>
 		</div>
 	{/if}

@@ -1,6 +1,7 @@
 <script>
-	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import Alert from '$lib/components/Alert.svelte';
 </script>
 
 <!-- <DropDown /> -->
-<Accordion />
+<!-- <Accordion /> -->
+<Alert />
