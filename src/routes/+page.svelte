@@ -1,7 +1,8 @@
 <script>
-	import Alert from '$lib/components/Alert.svelte';
+	import AlertDialog from '$lib/components/AlertDialog.svelte';
 </script>
 
 <!-- <DropDown /> -->
 <!-- <Accordion /> -->
-<Alert />
+<!-- <Alert /> -->
+<AlertDialog />
