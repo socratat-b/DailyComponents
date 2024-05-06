@@ -1,8 +1,9 @@
 <script>
-	import AlertDialog from '$lib/components/AlertDialog.svelte';
+	import Avatar from '$lib/components/Avatar.svelte';
 </script>
 
 <!-- <DropDown /> -->
 <!-- <Accordion /> -->
 <!-- <Alert /> -->
-<AlertDialog />
+<!-- <AlertDialog /> -->
+<Avatar />
