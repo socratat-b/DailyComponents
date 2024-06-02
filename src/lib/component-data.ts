@@ -32,3 +32,35 @@ export const getComponentName = (pathname: string): string => {
 	const component = componentData.find((c) => c.pathName === pathname);
 	return component ? component.componentName : '';
 };
+
+interface AccordionItem {
+	id: number;
+	title: string;
+	content: string;
+}
+interface AccordionItem {
+	id: number;
+	title: string;
+	content: string;
+}
+
+export const accordionItems: AccordionItem[] = [
+	{
+		id: 1,
+		title: 'What is Svelte?',
+		content:
+			'Svelte is a component framework for building user interfaces. It is a compiler that takes your components and generates highly optimized JavaScript code to run in the browser. Svelte is designed to be simple, performant, and lightweight.'
+	},
+	{
+		id: 2,
+		title: 'What is SvelteKit?',
+		content:
+			'SvelteKit is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. It is designed to work seamlessly with Svelte components and provides features like server-side rendering, file-based routing, code-splitting, and static site generation out of the box.'
+	},
+	{
+		id: 3,
+		title: 'What are the advantages of SvelteKit?',
+		content:
+			'Some key advantages of SvelteKit include:\n\n1. Excellent Developer Experience: SvelteKit provides a great developer experience with features like hot module replacement, file-based routing, and built-in support for TypeScript.\n\n2. Server-Side Rendering: SvelteKit supports server-side rendering out of the box, improving initial load times and SEO.\n\n3. Static Site Generation: SvelteKit can generate static sites, making it suitable for building blogs, documentation sites, and other content-heavy websites.\n\n4. Flexible Rendering: SvelteKit allows you to choose between server-side rendering, static site generation, or client-side rendering for each page, giving you control over the rendering strategy.'
+	}
+];
