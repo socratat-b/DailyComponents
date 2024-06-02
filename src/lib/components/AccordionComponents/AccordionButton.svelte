@@ -1,3 +1,3 @@
-<button on:click|stopPropagation class="group-hover:underline">
+<button on:click|stopPropagation class="font-sans group-hover:underline">
 	<slot />
 </button>
