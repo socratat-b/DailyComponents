@@ -1,5 +1,5 @@
 <script>
-	import { isAccordionItemOpen } from '$lib/store';
+	import { isAccordionItemOpen } from '$lib/utils/store';
 	export let id;
 </script>
 

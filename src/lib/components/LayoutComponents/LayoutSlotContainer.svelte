@@ -1,5 +1,5 @@
 <script>
-	import { isOpen } from '$lib/store';
+	import { isOpen } from '$lib/utils/store';
 
 	export let componentName;
 </script>

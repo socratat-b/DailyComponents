@@ -1,9 +1,9 @@
 <script>
 	import { page } from '$app/stores';
 
-	import { componentData, getComponentName } from '$lib/component-data';
 	import LayoutContainer from '$lib/components/LayoutComponents/LayoutContainer.svelte';
-	import { isOpen } from '$lib/store';
+	import { componentData, getComponentName } from '$lib/utils/component-data';
+	import { isOpen } from '$lib/utils/store';
 	import '../app.css';
 </script>
 

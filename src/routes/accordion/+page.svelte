@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { accordionItems } from '$lib/component-data';
+	import { accordionItems } from '$lib/utils/component-data';
 	import AccordionContainer from '$lib/components/AccordionComponents/AccordionContainer.svelte';
-	import { isAccordionItemOpen } from '$lib/store';
+	import { isAccordionItemOpen } from '$lib/utils/store';
 
 	const toggleAccordion = (id: number) => {
 		isAccordionItemOpen.update((state) => ({
