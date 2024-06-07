@@ -4,6 +4,6 @@
 	import SlotContainer from './LayoutSlotContainer.svelte';
 </script>
 
-<div class="flex h-screen">
+<div class="relative flex h-screen">
 	<slot {SideBar} {Links} {SlotContainer} />
 </div>
