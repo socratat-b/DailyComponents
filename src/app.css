@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.radio-custom {
+		@apply transition-all duration-500 border border-gray-300 rounded-full appearance-none size-6;
+	}
+
+	.radio-custom:checked {
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMzIiIGQ9Ik00MTYgMTI4TDE5MiAzODRsLTk2LTk2Ii8+PC9zdmc+');
+		background-size: 12px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
